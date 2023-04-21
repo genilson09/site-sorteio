@@ -1,0 +1,974 @@
+
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="https://maoises.com.br/css/app.css">
+    <script src="https://mobiasorteio.com.br/js/icons.js"></script>
+    <title></title>
+
+    <style>
+        .bg-primary {
+            background: #48ad4f;
+        }
+        .text-primary {
+            color: #48ad4f;
+        }
+        .on-hover:hover {
+            color: #48ad4f;
+        }
+    </style>
+        <style>
+        [data-tooltip]:before {
+            /* needed - do not touch */
+            content: attr(data-tooltip);
+            position: absolute;
+            opacity: 0;
+
+            /* customizable */
+            transition: all 0.15s ease;
+            padding: 10px;
+            color: #d2d3de;
+            font-size: 12px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 1px silver;
+        }
+
+        [data-tooltip]:hover:before {
+            /* needed - do not touch */
+            opacity: 1;
+
+            background: rgb(28, 29, 31);
+            margin-top: -90px;
+            margin-left: -30px;
+        }
+
+        [data-tooltip]:not([data-tooltip-persistent]):before {
+            pointer-events: none;
+        }
+
+        .bet-number-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start
+        }
+
+        .bet-number-container:nth-child(5) {
+            margin-bottom: 0;
+            margin-right: 0
+        }
+
+        .bet-number {
+            position: relative;
+        }
+
+        .bet-number,
+        .form-bet-number {
+            align-items: center;
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: flex;
+            height: 35px;
+            margin-bottom: 1.2%;
+            margin-right: 1.2%;
+            min-width: 60px;
+            width: 18.8%
+        }
+
+        .bet-number .bet-number-content,
+        .form-bet-number .bet-number-content {
+            font-size: 14px;
+            text-align: center;
+            width: 100%
+        }
+
+        @media (min-width: 425px) {
+            .bet-number-container:nth-child(6) {
+                margin-bottom: 0;
+                margin-right: 0
+            }
+
+            .bet-number,
+            .form-bet-number {
+                align-items: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+                display: flex;
+                height: 35px;
+                margin-bottom: 1%;
+                margin-right: 1%;
+                width: 15.66667%
+            }
+        }
+
+        @media (min-width: 640px) {
+            .bet-number-container:nth-child(9) {
+                margin-bottom: 0;
+                margin-right: 0
+            }
+
+            .bet-number,
+            .form-bet-number {
+                align-items: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+                display: flex;
+                height: 35px;
+                margin-bottom: .66667%;
+                margin-right: .66667%;
+                width: 10.44444%
+            }
+        }
+
+        @media (min-width: 768px) {
+            .bet-number-container:nth-child(12) {
+                margin-bottom: 0;
+                margin-right: 0
+            }
+
+            .bet-number,
+            .form-bet-number {
+                align-items: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+                display: flex;
+                height: 35px;
+                margin-bottom: .5%;
+                margin-right: .5%;
+                width: 7.83333%
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .bet-number-container:nth-child(15) {
+                margin-bottom: 0;
+                margin-right: 0
+            }
+
+            .bet-number,
+            .form-bet-number {
+                align-items: center;
+                border-radius: 4px;
+                box-sizing: border-box;
+                display: flex;
+                height: 35px;
+                margin-bottom: .4%;
+                margin-right: .4%;
+                min-width: 68px;
+                width: 6.26667%
+            }
+        }
+
+    </style>
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:site_name" content="mobiasorteio.com.br"/>
+    <meta property="og:title" content="BMW 320i OU 100 MIL"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:url" content="http://mobiasorteio.com.br/sorteio/bmw-320i-ou-100-mil?fbclid=PAAaZ0RkC0K38o_cUlZebqA7od9-Xa2Q05w84nICJaPH0vb9hg76EgHv5YviI"/>
+    <meta property="og:description" content="&lt;p&gt;Olá, tudo bem?&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Fico feliz pela sua compra, cruze os dedos e boa sorte!!!&amp;nbsp;🍀&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Vamos de dúvidas:&amp;nbsp;👇🏼&lt;/p&gt;&lt;p&gt;1º - Se a sua dúvida é: “como e quando o sorteio é realizado?”&lt;/p&gt;&lt;p&gt;R: Dia 06 de MAIO vamos pegar o número que sair pela loteria federal e sortear pelo nosso sistema e ver qual o número saiu, depois disso vamos entrar em contato com o ganhador (por isso é importante colocar nome e dados corretos) e depois vamos postar no instagram.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2º - Se a sua dúvida é: “a chave pix está dando erro”&lt;/p&gt;&lt;p&gt;R: A única chave pix disponível é aquela que está no site, você precisa ir no seu banco na parte do pix cópia e cola e colocar lá, ou pagar pelo qrcode gerado. Tem bancos que não aceita esse formato de chave pix sem um motivo aparente, só não aceita.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3º - Se a sua dúvida é: “tem outra chave pix?”&lt;/p&gt;&lt;p&gt;R: Não, infelizmente não tem! Somente a que está no site&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;4º - Se a sua dúvida é: “aonde eu acho a chave pix?”&lt;/p&gt;&lt;p&gt;R: No site tem a chave pix! Você escolhe a quantidade de números que quer, faz o cadastro e depois vai aparecer um botão para você gerar o pix, e só copiar e colar no seu banco.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;5º - Se a sua dúvida é: “aonde eu vejo meus números?”&amp;nbsp;&lt;/p&gt;&lt;p&gt;R: Seus números vão aparecer como COTAS e para visualizar eles é só ir no site, clicar em MEUS PEDIDOS, colocar seu telefone (por isso a importância de colocar o telefone certo) e lá vai estar as suas cotas.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;6º - Se a sua dúvida é: “eu não escolhi meu número”&lt;/p&gt;&lt;p&gt;R$: Sim, realmente, o número é escolhido ALEATORIAMENTE pelo próprio sistema no site.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;7º - se a sua dúvida é: “preciso enviar o comprovante”&lt;/p&gt;&lt;p&gt;R: Não, não precisa!&lt;/p&gt;"/>
+            <meta property="og:image"
+              content="https://mobiasorteio.com.br/storage/images/OIy3JwmabKMuVHwZ1XqiwqzdI0iX6i2lrPpJeEx4.jpg"/>
+        <meta property="og:image:type" content="image/jpeg"/>
+        <meta property="og:image:width" content="600"/>
+        <meta property="og:image:height" content="600"/>
+    
+</head>
+<body class=" relative bg-raffle dark:bg-raffle-900 font-body">
+        <header id="header" class="bg-white shadow-lg dark:bg-black">
+    <div class="container m-auto">
+        <div class="flex justify-between items-center text-raffle-900 dark:text-raffle py-4 md:py-0 px-4">
+            <a href="https://mobiasorteio.com.br">
+                                    <h1 class="font-bold text-2xl text-right montserrat-regular">
+                                                    Sistema <br>de Rifa
+                        
+                    </h1>
+                            </a>
+
+            <nav class="hidden font-normal uppercase md:flex justify-between space-x-4 lg:space-x-14 text-raffle-900 dark:text-raffle">
+                <a class="relative font-bold on-hover" href="https://mobiasorteio.com.br/sorteios">Sorteios</a>
+                <a class="relative font-bold on-hover" href="https://mobiasorteio.com.br/ganhadores">Ganhadores</a>
+                <a class="relative font-bold on-hover" href="https://mobiasorteio.com.br/pedidos">Meus números</a>
+                <a class="relative font-bold on-hover" href="https://mobiasorteio.com.br/sobre">Sobre</a>
+            </nav>
+                            <div></div>
+            
+            <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg>
+
+        </div>
+    </div>
+</header>
+    <div id="content">
+            <section class="md:pt-20 md:pb-10 bg-raffle dark:bg-[#161616]">
+        <div class="container m-auto">
+            <div class="px-3 flex flex-col md:flex-row md:items-start dark:text-darker">
+                <div id="raffle-images" class="flex-1 lg:w-1/2 lg:flex-auto m-2">
+                    <div class="slider-pro">
+                        <div class="sp-slides">
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/OIy3JwmabKMuVHwZ1XqiwqzdI0iX6i2lrPpJeEx4.jpg"/>
+                                </div>
+
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/EAzut7Ba5XKpPazIkqoDSHRomnKhNxDh7bgv3BaM.jpg"/>
+                                </div>
+
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/A3FW62eC36yzl7jvKTbMxSHdCv7bDmz4VyksWPKz.jpg"/>
+                                </div>
+
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/0IsJ4VYQSCb1wJZr0uVP6a7l5mxOAL1aYBVF81aI.jpg"/>
+                                </div>
+
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/wSyxUL7lHlOUdv7IxfzuIvbwaXI3R2xtOt1cPkYu.jpg"/>
+                                </div>
+
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/IVuSvclRYcjtoW5l9WRBv9BIgHqnlXpAvmrSvhhV.jpg"/>
+                                </div>
+
+                                                            <div class="sp-slide">
+                                    <img style="max-width: 600px" alt="imagem da rifa" class="sp-image"
+                                         src="/storage/images/QKO8KfIzjSptwB8gLPP4dy8IF5mCb14pOXV3aKyj.jpg"/>
+                                </div>
+
+                                                    </div>
+                        <div class="sp-thumbnails">
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/OIy3JwmabKMuVHwZ1XqiwqzdI0iX6i2lrPpJeEx4.jpg"
+                                         alt=""/>
+                                </div>
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/EAzut7Ba5XKpPazIkqoDSHRomnKhNxDh7bgv3BaM.jpg"
+                                         alt=""/>
+                                </div>
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/A3FW62eC36yzl7jvKTbMxSHdCv7bDmz4VyksWPKz.jpg"
+                                         alt=""/>
+                                </div>
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/0IsJ4VYQSCb1wJZr0uVP6a7l5mxOAL1aYBVF81aI.jpg"
+                                         alt=""/>
+                                </div>
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/wSyxUL7lHlOUdv7IxfzuIvbwaXI3R2xtOt1cPkYu.jpg"
+                                         alt=""/>
+                                </div>
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/IVuSvclRYcjtoW5l9WRBv9BIgHqnlXpAvmrSvhhV.jpg"
+                                         alt=""/>
+                                </div>
+                                                            <div class="sp-thumbnail">
+                                    <img class="sp-thumbnail-image"
+                                         src="/storage/images/QKO8KfIzjSptwB8gLPP4dy8IF5mCb14pOXV3aKyj.jpg"
+                                         alt=""/>
+                                </div>
+                                                    </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col justify-around flex-1 lg:w-1/2 lg:flex-auto m-2">
+                    <div>
+                        <h1 class="text-2xl text-raffle-900 dark:text-raffle bold">BMW 320i OU 100 MIL</h1>
+                    </div>
+                    <div class="flex justify-between items-center py-2">
+                        <div class="flex items-center">
+                            <a target="_blank"
+                               href="https://www.facebook.com/sharer/sharer.php?u=https://mobiasorteio.com.br/sorteio/bmw-320i-ou-100-mil"
+                               class="p-2 bg-[#4267B2] flex items-center justify-center rounded cursor-pointer mr-1">
+                                <i class="fab fa-facebook text-white text-2xl"></i>
+                            </a>
+                            <a target="_blank" href="https://telegram.me/share/url?url=https://mobiasorteio.com.br/sorteio/bmw-320i-ou-100-mil"
+                               class="p-2 bg-[#0088CC] flex items-center justify-center rounded cursor-pointer mr-1">
+                                <i class="fab fa-telegram text-white text-2xl"></i>
+                            </a>
+
+                            <a href="https://www.twitter.com/share?url=https://mobiasorteio.com.br/sorteio/bmw-320i-ou-100-mil" target="_blank"
+                               class="p-2 bg-[#1DA1F2] flex items-center justify-center rounded cursor-pointer mr-1">
+                                <i class="fab fa-twitter text-white text-2xl"></i>
+                            </a>
+
+                            <a target="_blank"
+                               href="https://wa.me/?text=Vem participar: BMW 320i OU 100 MIL: https://mobiasorteio.com.br/sorteio/bmw-320i-ou-100-mil"
+                               class="p-2 bg-[#25D366] flex items-center justify-center rounded cursor-pointer mr-1">
+                                <i class="fab fa-whatsapp text-white text-2xl"></i>
+                            </a>
+                        </div>
+                        <div class="bg-green-600 text-white px-3 py-2 rounded-lg">
+                            R$2,49
+                        </div>
+                    </div>
+                                            <div
+                            class="bg-white dark:bg-[#1c1c1c] dark:border dark:border-gray-700 text-raffle-900 dark:text-raffle p-4 mb-4 rounded flex justify-between items-center">
+                            <div>Data do sorteio:</div>
+                            <span>
+                                <i class="fas fa-calendar-alt"></i>
+                                06 de Maio às 20:00
+                            </span>
+                        </div>
+                    
+
+
+                    
+                                                                        <div
+                                class="bg-white dark:bg-[#1c1c1c] dark:border dark:border-gray-700 text-raffle-900 shadow-lg dark:text-raffle mb-4 p-4 rounded overflow-y-scroll max-h-[250px]">
+                                <p>Olá, tudo bem?</p><p><br></p><p>Fico feliz pela sua compra, cruze os dedos e boa sorte!!!&nbsp;🍀&nbsp;</p><p><br></p><p>Vamos de dúvidas:&nbsp;👇🏼</p><p>1º - Se a sua dúvida é: “como e quando o sorteio é realizado?”</p><p>R: Dia 06 de MAIO vamos pegar o número que sair pela loteria federal e sortear pelo nosso sistema e ver qual o número saiu, depois disso vamos entrar em contato com o ganhador (por isso é importante colocar nome e dados corretos) e depois vamos postar no instagram.</p><p><br></p><p>2º - Se a sua dúvida é: “a chave pix está dando erro”</p><p>R: A única chave pix disponível é aquela que está no site, você precisa ir no seu banco na parte do pix cópia e cola e colocar lá, ou pagar pelo qrcode gerado. Tem bancos que não aceita esse formato de chave pix sem um motivo aparente, só não aceita.</p><p><br></p><p>3º - Se a sua dúvida é: “tem outra chave pix?”</p><p>R: Não, infelizmente não tem! Somente a que está no site</p><p><br></p><p>4º - Se a sua dúvida é: “aonde eu acho a chave pix?”</p><p>R: No site tem a chave pix! Você escolhe a quantidade de números que quer, faz o cadastro e depois vai aparecer um botão para você gerar o pix, e só copiar e colar no seu banco.</p><p><br></p><p>5º - Se a sua dúvida é: “aonde eu vejo meus números?”&nbsp;</p><p>R: Seus números vão aparecer como COTAS e para visualizar eles é só ir no site, clicar em MEUS PEDIDOS, colocar seu telefone (por isso a importância de colocar o telefone certo) e lá vai estar as suas cotas.</p><p><br></p><p>6º - Se a sua dúvida é: “eu não escolhi meu número”</p><p>R$: Sim, realmente, o número é escolhido ALEATORIAMENTE pelo próprio sistema no site.</p><p><br></p><p>7º - se a sua dúvida é: “preciso enviar o comprovante”</p><p>R: Não, não precisa!</p>
+                            </div>
+                        
+                        
+                                                    <div>
+                                <div class="p-1 border-l-8 rounded border-green-50 dark:border-primary mt-3">
+                                    <span
+                                        class="font-bold uppercase text-darker text-xl text-raffle-900 dark:text-raffle">compra
+                                        automática</span>
+                                </div>
+                                <p class="my-2 text-raffle-900 dark:text-raffle">O site escolhe números aleatórios para
+                                    você.</p>
+                            </div>
+
+                            <div
+                                class="flex flex-col text-raffle-900 dark:text-raffle rounded-lg text-center bg-white dark:bg-[#1c1c1c] dark:border dark:border-gray-700 shadow-lg p-4">
+                                <span id="random_purchase_description" class="m-2">
+                                    1 x R$2,49 = <strong>R$
+                                        2.49</strong>
+                                </span>
+                                <div class="flex flex-col">
+                                    <span class="font-sans mb-2">Pré selecione uma quantidade</span>
+
+                                    <div class="flex flex-wrap -mx-2 overflow-hidden">
+                                        <div data-amount="5"
+                                             class="my-2 px-2 w-1/2 overflow-hidden md:w-full lg:w-1/4 xl:w-1/4 p-2 pre-number-selector cursor-pointer hover:text-white">
+                                            <div
+                                                class="bg-raffle dark:bg-[#161616]  dark:border dark:border-gray-700 pointer-events-none rounded flex flex-col justify-center py-2">
+                                                <span
+                                                    class="pointer-events-none text-sm text-raffle-900 dark:text-raffle text-lg">+ 05</span>
+                                                <span
+                                                    class="uppercase text-raffle-600 text-sm pointer-events-none dark:text-raffle w-full rounded">Selecionar</span>
+                                            </div>
+                                        </div>
+
+                                        <div data-amount="10"
+                                             class="my-2 px-2 w-1/2 overflow-hidden md:w-full lg:w-1/4 xl:w-1/4 p-2 pre-number-selector cursor-pointer hover:text-white">
+                                            <div
+                                                class="bg-raffle dark:bg-[#161616]  dark:border dark:border-gray-700 pointer-events-none rounded flex flex-col justify-center py-2">
+                                                <span
+                                                    class="pointer-events-none text-sm text-raffle-900 dark:text-raffle text-lg">+ 10</span>
+                                                <span
+                                                    class="uppercase text-raffle-600 text-sm pointer-events-none dark:text-raffle w-full rounded">Selecionar</span>
+                                            </div>
+                                        </div>
+
+                                        <div data-amount="25"
+                                             class="my-2 px-2 w-1/2 overflow-hidden md:w-full lg:w-1/4 xl:w-1/4 p-2 pre-number-selector cursor-pointer hover:text-white">
+                                            <div
+                                                class="bg-raffle dark:bg-[#161616]  dark:border dark:border-gray-700 pointer-events-none rounded flex flex-col justify-center py-2">
+                                                <span
+                                                    class="pointer-events-none text-sm text-raffle-900 dark:text-raffle text-lg">+ 25</span>
+                                                <span
+                                                    class="uppercase text-raffle-600 text-sm pointer-events-none dark:text-raffle w-full rounded">Selecionar</span>
+                                            </div>
+                                        </div>
+
+                                        <div data-amount="50"
+                                             class="my-2 px-2 w-1/2 overflow-hidden md:w-full lg:w-1/4 xl:w-1/4 p-2 pre-number-selector cursor-pointer hover:text-white">
+                                            <div
+                                                class="bg-raffle dark:bg-[#161616]  dark:border dark:border-gray-700 pointer-events-none rounded flex flex-col justify-center py-2">
+                                                <span
+                                                    class="pointer-events-none text-sm text-raffle-900 dark:text-raffle text-lg">+ 50</span>
+                                                <span
+                                                    class="uppercase text-raffle-600 text-sm pointer-events-none dark:text-raffle w-full rounded">Selecionar</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-center border-green-50 justify-between">
+                                    <div class="flex items-center w-full mb-2">
+                                        <div data-action="less"
+                                             class="border border-gray-700  cursor-pointer flex justify-center items-center w-8 h-8 random-number-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                 stroke-width="1.5" stroke="currentColor"
+                                                 class="w-6 h-6 pointer-events-none">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"/>
+                                            </svg>
+
+                                        </div>
+                                        <div class="w-full mx-2">
+                                            <label>
+                                                <input id="random-numbers-input"
+                                                       class="p-1 w-full text-center bg-raffle text-raffle-600 dark:bg-[#161616] dark:text-raffle font-bold focus:ring-orange border-none only-number-input"
+                                                       type="text">
+                                            </label>
+                                        </div>
+                                        <div data-action="more"
+                                             class="border border-gray-700 cursor-pointer flex justify-center items-center w-8 h-8 random-number-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                 stroke-width="1.5" stroke="currentColor"
+                                                 class="w-6 h-6 pointer-events-none">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      d="M12 4.5v15m7.5-7.5h-15"/>
+                                            </svg>
+
+                                        </div>
+                                    </div>
+                                    <button id="random_purchase_btn"
+                                            class="py-2 text-white flex items-center justify-center px-3 rounded w-full bg-green-600 font-medium dark:text-white">
+                                        <span class="mr-2">Comprar</span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                             stroke="currentColor" class="w-4 h-4">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        
+                            <a href="https://mobiasorteio.com.br/pedidos"
+                               class="bg-primary text-white mt-5 p-2 mb-4 rounded text-center cursor-pointer flex items-center justify-center">
+                                <p class="mr-2">Ver meus números</p>
+                            </a>
+                                    </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    
+            <section class="bg-raffle dark:bg-[#161616] md:pt-20 md:pb-10">
+    <div class="container m-auto">
+        <div class="flex px-3 flex-col">
+            <h1 class="text-raffle-900 dark:text-raffle text-2xl font-bold uppercase">
+                Regulamento do sorteio
+            </h1>
+            <span class="p-0.5 bg-primary w-28 rounded"></span>
+            <p class="text-raffle-400 dark:text-raffle mb-3">
+                Leia atentamente!
+            </p>
+        </div>
+        <div class="px-3 pb-4">
+            <p>Olá, tudo bem?</p><p><br></p><p>Fico feliz pela sua compra, cruze os dedos e boa sorte!!!&nbsp;🍀&nbsp;</p><p><br></p><p>Vamos de dúvidas:&nbsp;👇🏼</p><p>1º - Se a sua dúvida é: “como e quando o sorteio é realizado?”</p><p>R: Dia 06 de MAIO vamos pegar o número que sair pela loteria federal e sortear pelo nosso sistema e ver qual o número saiu, depois disso vamos entrar em contato com o ganhador (por isso é importante colocar nome e dados corretos) e depois vamos postar no instagram.</p><p><br></p><p>2º - Se a sua dúvida é: “a chave pix está dando erro”</p><p>R: A única chave pix disponível é aquela que está no site, você precisa ir no seu banco na parte do pix cópia e cola e colocar lá, ou pagar pelo qrcode gerado. Tem bancos que não aceita esse formato de chave pix sem um motivo aparente, só não aceita.</p><p><br></p><p>3º - Se a sua dúvida é: “tem outra chave pix?”</p><p>R: Não, infelizmente não tem! Somente a que está no site</p><p><br></p><p>4º - Se a sua dúvida é: “aonde eu acho a chave pix?”</p><p>R: No site tem a chave pix! Você escolhe a quantidade de números que quer, faz o cadastro e depois vai aparecer um botão para você gerar o pix, e só copiar e colar no seu banco.</p><p><br></p><p>5º - Se a sua dúvida é: “aonde eu vejo meus números?”&nbsp;</p><p>R: Seus números vão aparecer como COTAS e para visualizar eles é só ir no site, clicar em MEUS PEDIDOS, colocar seu telefone (por isso a importância de colocar o telefone certo) e lá vai estar as suas cotas.</p><p><br></p><p>6º - Se a sua dúvida é: “eu não escolhi meu número”</p><p>R$: Sim, realmente, o número é escolhido ALEATORIAMENTE pelo próprio sistema no site.</p><p><br></p><p>7º - se a sua dúvida é: “preciso enviar o comprovante”</p><p>R: Não, não precisa!</p>
+        </div>
+
+    </div>
+</section>
+    
+
+    <section class="bg-primary pt-10" id="steps">
+    <div class="container m-auto">
+        <div class="flex flex-col md:flex-row items-start text-white ">
+            <div class="flex-1 relative p-4 min-h-[230px]">
+                <span
+                    class="absolute text-black font-extrabold text-opacity-20 text-[240px] font-sans -top-[100px] -left-[5px]">1</span>
+                <h2 class="uppercase font-bold text-xl mb-4">
+                    <i class="fas fa-search"></i>
+                    ESCOLHA O SORTEIO
+                </h2>
+                <p class="">Escolha o prêmio que gostaria de concorrer, verifique a descrição, regulamento
+                    do sorteio e fotos. Em caso de dúvidas entre em contato com o administrador.</p>
+            </div>
+            <div class="flex-1 p-4 relative min-h-[230px]">
+                <span
+                    class="absolute text-black font-extrabold text-opacity-20 text-[240px] font-sans -top-[100px] -left-[5px]">2</span>
+                <h2 class="uppercase font-bold text-xl mb-4">
+                    <i class="fas fa-check-circle"></i>
+                    SELECIONE SEUS BILHETES
+                </h2>
+                <p class="">Você pode escolher quantos bilhetes desejar!
+                    Mais bilhetes, mais chances de ganhar.</p>
+            </div>
+            <div class="flex-1 p-4 relative min-h-[230px]">
+                <span
+                    class="absolute text-black font-extrabold text-opacity-20 text-[240px] font-sans -top-[100px] -left-[5px]">3</span>
+                <h2 class="uppercase font-bold text-xl mb-4">
+                    <i class="fas fa-money-bill-wave"></i>
+                    FAÇA O PAGAMENTO
+                </h2>
+                <p class="z-20">Faça o pagamento no(s) método(s) de pagamento(s) disponíveis no site.</p>
+            </div>
+            <div class="flex-1 p-4 relative min-h-[230px]">
+                <span
+                    class="absolute text-black font-extrabold text-opacity-20 text-[240px] font-sans -top-[100px] -left-[5px] ">4</span>
+                <h2 class="uppercase font-bold text-xl mb-4">
+                    <i class="fas fa-hourglass-half"></i>
+                    AGUARDE O SORTEIO
+                </h2>
+                <p class="z-20">Aguarde o Sorteio. Cruze os dedos! Você pode ser o próximo sorteado.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="h-48 bg-raffle dark:bg-[#161616]">
+    <div class="container m-auto">
+        <div class="flex flex-col items-center">
+            <div class="w-full flex flex-col md:flex-row justify-between items-center">
+                <nav class="text-raffle-500 dark:text-gray-300 flex mt-8 space-x-6 justify-between px-3">
+                    <a href="https://mobiasorteio.com.br">Home</a>
+                    <a href="https://mobiasorteio.com.br/terms">Termos</a>
+                    <a href="https://mobiasorteio.com.br/sorteios">Sorteios</a>
+                </nav>
+                
+            </div>
+
+            <div class="p-2 text-center text-raffle-500 dark:text-gray-300 bg-raffle dark:bg-[#161616]">
+                <small>
+                    &#169;
+                    2023 - Todos os direitos reservados
+
+                                            | Desenvolvido por <a id="linksistemaderifa" class="text-primary"
+                            href="https://sistemaderifa.com.br/">
+                                                            Sistema de rifa
+                            
+                        </a>
+                                    </small>
+
+                            </div>
+        </div>
+    </div>
+</footer>
+    
+
+    <div id="purchase-modal"
+     class="hidden top-0 bottom-0 bg-black bg-opacity-90 overflow-y-scroll">
+
+    <div class="flex items-center justify-center w-screen min-h-screen">
+        <div class="md:max-w-md p-3 w-full m-5 bg-raffle dark:bg-raffle-800 rounded-md">
+            <div class="flex items-center justify-between mb-3">
+                <h1 class="uppercase text-2xl font-medium text-raffle-900 dark:text-raffle">
+                    <i class="fas fa-cart-plus"></i>
+                    checkout
+                </h1>
+
+                <h1 id="close-purchase-modal" class="cursor-pointer">
+                    <i class="fas fa-times uppercase text-2xl font-medium text-raffle-900 dark:text-raffle"></i>
+                </h1>
+            </div>
+
+            <p class="text-raffle-900 dark:text-raffle text-sm mb-3">
+                Para continuar com sua compra preencha os campos abaixo.
+            </p>
+                        <div class="rounded p-3 bg-white dark:bg-raffle-900 text-raffle-900 dark:text-raffle">
+                <p class="text-raffle-900 dark:text-raffle text-sm mb-2">Pagamento referente a participação no sorteio
+                    "BMW 320i OU 100 MIL"
+                    </p>
+                <div class="bet-number-container mt-2 overflow-y-scroll max-h-52">
+                                                </div>
+                            <div class="text-center p-2">
+                                <span id="total-description" class="my-3 text-white total-description"></span>
+                            </div>
+                </div>
+                <form action="https://mobiasorteio.com.br/requests/generate" method="POST" id="number-purchase-form">
+                    <input type="hidden" name="_token" value="e6XQeOtAJwfiFpq1rzKbBmV9MaYFYiTyGVzK0RyL">                                                            <input type="hidden" id="affiliate_code" value=""
+                           name="affiliate_code">
+                    <input type="hidden" name="raffle_ref" value="b54a58c5-dbb9-47ed-83fe-ada9e4935b88">
+                    <input type="hidden" name="raffle_type" value="random">
+
+                    <div class="flex flex-col items-center py-3">
+                        <div class="w-full mb-2  hidden ">
+                            <label class="block text-raffle-900 dark:text-raffle text-sm" for="name">Seu nome</label>
+                            <input
+                                class="inp dark:bg-gray-700 w-full rounded-md border-none text-raffle-900 dark:text-raffle focus:outline-none focus:ring-1 focus:ring-orange focus:border-transparent"
+                                type="text" value="" id="name" name="name">
+                        </div>
+
+                        <div class="w-full mb-2">
+                            <label class="block text-raffle-900 dark:text-raffle text-sm" for="phone">Seu
+                                Telefone</label>
+                            <input data-inpuit-type="phone"
+                                   class="dark:bg-gray-700 w-full rounded-md border-none text-raffle-900 dark:text-raffle focus:outline-none focus:ring-1 focus:ring-orange focus:border-transparent phone"
+                                   type="text" value="" autocomplete="off" inputmode="numeric" id="phone"
+                                   name="phone">
+                        </div>
+
+                        <div class="w-full mb-2  hidden ">
+                            <label class="block text-raffle-900 dark:text-raffle text-sm" for="phone_confirmation">Confirme seu
+                                telefone</label>
+                            <input data-inpuit-type="phone"
+                                   class="inp dark:bg-gray-700 w-full rounded-md border-none text-raffle-900 dark:text-raffle focus:outline-none focus:ring-1 focus:ring-orange focus:border-transparent phone"
+                                   type="text" value="" autocomplete="off" inputmode="numeric"
+                                   id="phone_confirmation" name="phone_confirmation">
+                        </div>
+
+                        <div class="w-full mb-2  hidden ">
+                            <label class="block text-raffle-900 dark:text-raffle text-sm" for="email">Seu email</label>
+                            <input
+                                class="inp dark:bg-gray-700 w-full rounded-md border-none text-raffle-900 dark:text-raffle focus:outline-none focus:ring-1 focus:ring-orange focus:border-transparent"
+                                type="email" id="email" value="" name="email">
+                        </div>
+
+                                                <p class="text-raffle-900 dark:text-raffle">
+                            <input id="accept-terms" checked class="rounded-md mr-3" type="checkbox">
+                            Ao clicar em finalizar, você está de acordo com os <a href="https://mobiasorteio.com.br/terms">termos</a> do sorteio.
+                        </p>
+                        <button
+                            id="done-btn" onclick="this.setAttribute('disabled', 'disabled');this.closest('form').submit()"
+                            class="hidden w-full my-2 rounded font uppercase text-white bg-green-600 py-3 px-3 disabled:bg-opacity-20">
+                            Finalizar
+                        </button>
+
+                        <button
+                            id="get-customer-btn"
+                            type="button"
+                            class="w-full my-2 rounded font uppercase text-white bg-green-600 py-3 px-3">
+                            Prosseguir
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <input type="hidden" id="unit-price-input" value="2.49" name="unit-price-input">
+    <input type="hidden" id="min_quota_limit_per_client" value="0"
+           name="min_quota_limit_per_client">
+    <input type="hidden" id="quota_limit_per_client" value="5000"
+           name="quota_limit_per_client">
+    <input type="hidden" id="discount_condition_number" value="0"
+           name="discount_condition_number">
+    <input type="hidden" id="discount_amount" value="0.00" name="discount_amount">
+    </div>
+        <script src="https://mobiasorteio.com.br/js/script.js"></script>
+    <script src="https://mobiasorteio.com.br/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+    <script src="https://mobiasorteio.com.br/admin/js/vendors/inputmask/jquery.inputmask.js"></script>
+    <script>
+        $(document).ready(function(){
+            const header = document.querySelector("header");
+            const content = document.querySelector("#content");
+            const footer = document.querySelector("#footer");
+            $(".phone").inputmask("(99) 9 9999-9999");
+            $(".card").inputmask("9999 9999 9999 9999");
+            $(".card-expiration-date").inputmask("99/99");
+            $(".cvv").inputmask("999");
+            $(".cpf").inputmask("999.999.999-99");
+
+            $('.slider-pro').sliderPro({
+                width: 500,
+                height: 500,
+                autoplay: true,
+                buttons:false,
+                autoplayDelay: 4000
+            });
+
+            (function($) {
+                $.fn.inputFilter = function(inputFilter) {
+                    return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+                        if (inputFilter(this.value)) {
+                            this.oldValue = this.value;
+                            this.oldSelectionStart = this.selectionStart;
+                            this.oldSelectionEnd = this.selectionEnd;
+                        } else if (this.hasOwnProperty("oldValue")) {
+                            this.value = this.oldValue;
+                            this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                        } else {
+                            this.value = "";
+                        }
+                    });
+                };
+            }(jQuery));
+
+            $(".only-number-input").inputFilter(function(value) {
+                return /^\d*$/.test(value);
+            });
+
+            let headerH = header.offsetHeight;
+            let contentH = content.offsetHeight;
+            let footerH = footer.offsetHeight;
+
+            let windowH = window.innerHeight || document.documentElement.clientHeight;
+            let contH = headerH + contentH + footerH;
+            if(contH < windowH){
+                let minContentHeight = windowH - (headerH + footerH);
+                content.firstElementChild.setAttribute("style", `min-height: ${minContentHeight}px`);
+
+            }
+        });
+
+        const clipboard = new ClipboardJS('.clipboard-btn');
+        clipboard.on('success', () => alert("Copiado com sucesso!"))
+    </script>
+        <script>
+        function terms() {
+            const checkbox = document.querySelector("#accept-terms");
+            const done_btn = document.querySelector("#done-btn");
+            checkbox.addEventListener("change", ({target}) => {
+                if (target.checked) {
+                    done_btn.removeAttribute("disabled");
+                } else {
+                    done_btn.setAttribute("disabled", "")
+                }
+            })
+        }
+
+        terms();
+
+        $('#get-customer-btn').on("click", async (e) => {
+            const phone = `${$('#phone').val()}`
+                .replaceAll("(", "")
+                .replaceAll(")", "")
+                .replaceAll(" ", "")
+                .replaceAll("-", "")
+                .replaceAll("_", "");
+
+            if(phone.length === 11) {
+                e.target.classList.add("hidden");
+
+                const inputs = document.querySelectorAll(".inp");
+                let btn = document.querySelector("#done-btn");
+                const response = await fetch(`https://mobiasorteio.com.br/users/${phone}`);
+                const data = await response.json();
+
+                inputs.forEach(input => {
+                    const id = input.getAttribute("id");
+                    if(data[id]) {
+                        input.setAttribute("value", data[id]);
+                    }
+                    input.parentElement.classList.remove("hidden")
+                });
+                btn.removeAttribute("disabled");
+                btn.classList.remove("hidden");
+
+            }
+        })
+    </script>
+            <script>
+            const btn = document.querySelector("#random_purchase_btn");
+            const numbersQtdInput = document.querySelector("#random-numbers-input");
+            const purchaseForm = document.querySelector("#number-purchase-form");
+            const unitPrice = parseFloat(document.querySelector("#unit-price-input").value);
+            const quotaLimitPerClient = parseInt(document.querySelector("#quota_limit_per_client").value);
+            const minQuotaLimitPerClient = parseInt(document.querySelector("#min_quota_limit_per_client").value);
+            const purchase_modal = document.querySelector("#purchase-modal");
+            const close_purchase_modal = document.querySelector("#close-purchase-modal");
+            let randomPurchaseDescription = document.querySelector("#random_purchase_description");
+
+            function closePurchaseFormBtn() {
+                close_purchase_modal.addEventListener("click", () => {
+                    purchase_modal.classList.add("hidden");
+                    document.querySelector("body").setAttribute("style", "");
+                });
+            }
+
+
+            function applyQuotaConditions(numbersQtd) {
+                if (quotaLimitPerClient) {
+                    if (numbersQtd >= quotaLimitPerClient) {
+                        btn.setAttribute("type", "button");
+                        randomPurchaseDescription.innerHTML += `
+                        <br><div style="background: rgba(232, 79, 79, 0.2); padding:5px 7px; border-radius:7px">
+                            <span style="color:rgba(232, 79, 79, 1);">A quantidade máxima de números por pedido é ${quotaLimitPerClient}.</span>
+                        </div>`;
+                    } else {
+                        btn.setAttribute("type", "submit");
+                    }
+                }
+
+                if (minQuotaLimitPerClient) {
+                    if (numbersQtd < minQuotaLimitPerClient) {
+                        btn.setAttribute("type", "button");
+                        randomPurchaseDescription.innerHTML += `
+                        <br><div style="background: rgba(232, 79, 79, 0.2); padding:5px 7px; border-radius:7px">
+                            <span style="color:rgba(232, 79, 79, 1);">É obrigatorio comprar ao menos ${minQuotaLimitPerClient} números.</span>
+                        </div>`;
+                    } else {
+                        btn.setAttribute("type", "submit");
+                    }
+                }
+            }
+
+            function calculateTotalOrderPrice(numbersAmount) {
+                const discountConditionNumber = parseInt(document.querySelector("input[name='discount_condition_number']")
+                    .value);
+                const discountAmount = parseFloat(document.querySelector("input[name='discount_amount']").value);
+                if (discountConditionNumber && discountAmount) {
+
+                    if (numbersAmount < discountConditionNumber) {
+                        return numbersAmount * unitPrice;
+                    }
+                    const withoutDiscount = numbersAmount * unitPrice;
+                    const discountValue = Math.floor(numbersAmount / discountConditionNumber) * discountAmount;
+                    return withoutDiscount - discountValue;
+                }
+                return numbersAmount * unitPrice;
+            }
+
+            function randomNumberInput() {
+                const btns = document.querySelectorAll(".random-number-btn");
+                const input = document.querySelector("#random-numbers-input");
+                input.value = 1;
+                btns.forEach(btn => {
+                    btn.addEventListener("click", e => {
+                        const btnClicked = e.target;
+                        const action = btnClicked.getAttribute("data-action");
+                        if (action === "less") {
+                            if (parseInt(input.value) > 0) {
+                                input.value = parseInt(input.value) - 1;
+
+                            }
+                        } else {
+                            if (quotaLimitPerClient > 0) {
+                                if (parseInt(input.value) + 1 <= quotaLimitPerClient) {
+                                    input.value = parseInt(input.value) + 1;
+                                } else {
+                                    btn.setAttribute("type", "button");
+                                }
+                            } else {
+                                input.value = parseInt(input.value) + 1;
+                            }
+
+                        }
+                        createPurchaseDescription(input.value);
+                        applyQuotaConditions(input.value);
+                    });
+                });
+            }
+
+            function createPurchaseDescription(numbersQtd) {
+                const totalPrice = calculateTotalOrderPrice(numbersQtd);
+                let innerHtml = `${numbersQtd} x ${unitPrice.toLocaleString('pt-br', {
+                    style: 'currency',
+                    currency: 'BRL'
+                })} = <strong> ${totalPrice.toLocaleString('pt-br', {
+                    style: 'currency',
+                    currency: 'BRL'
+                })}</strong>`;
+
+
+                if (numbersQtd * unitPrice !== totalPrice) {
+                    const diff = (numbersQtd * unitPrice) - totalPrice;
+                    innerHtml += `<br><small>(com desconto de ${diff.toLocaleString('pt-br', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    })})</small>`;
+                }
+
+                randomPurchaseDescription.innerHTML = innerHtml;
+            }
+
+            function buy() {
+                purchase_modal.classList.remove("hidden");
+                purchase_modal.classList.add("fixed");
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                document.querySelector("body").setAttribute("style", "overflow-y: hidden");
+
+                const numbers_qtd_input = document.querySelector("#purchase-modal input[name='numbers_qtd']") ?? null;
+                setTimeout(function () {
+                    if (numbers_qtd_input) {
+                        numbers_qtd_input.setAttribute("value",
+                            `${document.querySelector('#random-numbers-input').value}`);
+                    } else {
+                        let numbers_qtd_input = document.createElement("input");
+                        numbers_qtd_input.setAttribute("type", "hidden");
+                        numbers_qtd_input.setAttribute("value",
+                            `${document.querySelector('#random-numbers-input').value}`);
+                        numbers_qtd_input.setAttribute("name", "numbers_qtd");
+                        purchaseForm.appendChild(numbers_qtd_input);
+                    }
+                }, 500)
+            }
+
+            btn.addEventListener("click", () => {
+                buy();
+            });
+
+
+            const selectors = document.querySelectorAll(".pre-number-selector");
+
+            selectors.forEach(selector => {
+                selector.addEventListener("click", e => {
+                    let old_value = parseInt(numbersQtdInput.value);
+                    let new_value = old_value + parseInt(e.target.getAttribute("data-amount"));
+                    if (old_value !== quotaLimitPerClient) {
+                        if (new_value > quotaLimitPerClient) {
+                            new_value = (quotaLimitPerClient - old_value) + old_value;
+                        }
+                        numbersQtdInput.value = new_value;
+                        createPurchaseDescription(numbersQtdInput.value);
+                        applyQuotaConditions(numbersQtdInput.value);
+                    }
+                });
+            });
+
+            const promotions = document.querySelectorAll(".promotion");
+            if (promotions) {
+                promotions.forEach(promotion => {
+                    promotion.addEventListener("click", ({target}) => {
+
+                        const amount = target.getAttribute("data-amount");
+                        console.log(target)
+                        numbersQtdInput.value = parseInt(amount);
+                        createPurchaseDescription(amount);
+                        applyQuotaConditions(amount);
+                        buy();
+                    })
+                });
+            }
+            randomNumberInput();
+            applyQuotaConditions(numbersQtdInput.value);
+            closePurchaseFormBtn();
+            if(minQuotaLimitPerClient) {
+                numbersQtdInput.value = minQuotaLimitPerClient;
+            }
+        </script>
+    
+    <div id="mobile_menu" class="md:hidden w-screen fixed bg-white dark:bg-black">
+    <div class="container m-auto">
+        <div class="flex flex-col justify-between">
+            <nav class="flex flex-col px-5 pt-4">
+                <a class="flex space-x-2 p-4 justify-between items-center rounded-xl mb-4 font-medium bg-primary" href="https://mobiasorteio.com.br">
+                    <span class="text-raffle-900 dark:text-raffle">Principal</span>
+                    <i class="fas fa-home text-2xl text-raffle-900 dark:text-raffle"></i>
+                </a>
+
+                <a class="flex space-x-2 p-4 justify-between items-center rounded-xl mb-4 font-medium bg-primary" href="https://mobiasorteio.com.br/ganhadores">
+                    <span class="text-raffle-900 dark:text-raffle">Ganhadores</span>
+                    <i class="fas fa-trophy text-2xl text-raffle-900 dark:text-raffle"></i>
+                </a>
+
+                <a class="flex space-x-2 p-4 justify-between items-center rounded-xl mb-4 font-medium bg-primary" href="https://mobiasorteio.com.br/sorteios">
+                    <span class="text-raffle-900 dark:text-raffle">Sorteios</span>
+                    <i class="fas fa-medal text-2xl text-raffle-900 dark:text-raffle"></i>
+                </a>
+
+                <a class="flex space-x-2 p-4 justify-between items-center rounded-xl mb-4 font-medium bg-primary" href="https://mobiasorteio.com.br/pedidos">
+                    <span class="text-raffle-900 dark:text-raffle">Meus números</span>
+                    <i class="fas fa-list-ol text-2xl text-raffle-900 dark:text-raffle"></i>
+                </a>
+
+            </nav>
+            
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
